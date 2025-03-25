@@ -1,0 +1,33 @@
+{
+    "name": "nekkoy/gateway-goip",
+    "description": "SMS Gateway for GSM GoIP",
+    "homepage": "https://github.com/nekkoy/gateway-goip",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "MIT",
+    "keywords": ["nekkoy", "laravel", "goip", "gsm", "gateway"],
+    "authors": [
+        {
+            "name": "Alexander Dudiak",
+            "email": "031991@gmail.com",
+            "homepage": "https://github.com/Nekkoy",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nekkoy\\GatewayGoip\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "nekkoy/gateway-abstract": ">=1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nekkoy\\GatewayGoip\\GoipServiceProvider"
+            ]
+        }
+    }
+}
