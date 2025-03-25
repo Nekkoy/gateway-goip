@@ -3,7 +3,7 @@
     "description": "SMS Gateway for GSM GoIP",
     "homepage": "https://github.com/nekkoy/gateway-goip",
     "type": "library",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "keywords": ["nekkoy", "laravel", "goip", "gsm", "gateway"],
     "authors": [

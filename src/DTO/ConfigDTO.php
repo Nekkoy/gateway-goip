@@ -14,28 +14,28 @@ class ConfigDTO extends AbstractConfigDTO
      * URL на интерфейс GoIP
      * @var string
      */
-    public string $server;
+    public $server;
 
     /**
      * Логин
      * @var string
      */
-    public string $login;
+    public $login;
 
     /**
      * Пароль
      * @var string
      */
-    public string $password;
+    public $password;
 
     /**
      * Номер канала для отправки (номер СИМ)
      * @var int
      */
-    public int $channel;
+    public $channel;
 
     /**
      * @var string
      */
-    public string $handler = \Nekkoy\GatewayGoip\Services\SendMessageService::class;
+    public $handler = \Nekkoy\GatewayGoip\Services\SendMessageService::class;
 }
