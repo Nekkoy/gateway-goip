@@ -1,6 +1,11 @@
 # gateway-goip
 SMS Gateway для GSM GoIP
 
+Установка:
+```
+composer require nekkoy/gateway-goip
+```
+
 Конфигурация `.env`
 ===============
 ```
