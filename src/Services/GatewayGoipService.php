@@ -6,6 +6,9 @@ use Nekkoy\GatewayGoip\DTO\ConfigDTO;
 use Nekkoy\GatewayAbstract\DTO\MessageDTO;
 use Nekkoy\GatewayAbstract\DTO\ResponseDTO;
 
+/**
+ *
+ */
 class GatewayGoipService
 {
 	/**
@@ -16,7 +19,7 @@ class GatewayGoipService
         /** @var ConfigDTO $config */
         $config = app(GatewayService::class)->getConfig();
 
-        /** @var \Nekkoy\GatewayGoip\Services\SendMessageService $gateway */
+        /** @var SendMessageService $gateway */
         $gateway = new $config->handler($config, $message);
 
         return $gateway->send();
