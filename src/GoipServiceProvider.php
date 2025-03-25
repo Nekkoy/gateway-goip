@@ -14,6 +14,10 @@ class GoipServiceProvider extends ServiceProvider
         $this->app->singleton(\Nekkoy\GatewayGoip\Services\GatewayService::class, function ($app) {
             return new \Nekkoy\GatewayGoip\Services\GatewayService();
         });
+
+        $this->app->singleton('gateway-goip', function ($app) {
+            return new \Nekkoy\GatewayGoip\Services\GatewayGoipService();
+        });
     }
 
     public function boot()

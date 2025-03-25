@@ -2,9 +2,8 @@
 
 namespace Nekkoy\GatewayGoip\Services;
 
-use Nekkoy\GatewayAbstract\DTO\ResponseDTO;
-use Nekkoy\GatewayAbstract\Services\AbstractSendMessageService;
 use Nekkoy\GatewayGoip\DTO\ConfigDTO;
+use Nekkoy\GatewayAbstract\Services\AbstractSendMessageService;
 
 /**
  *
@@ -19,7 +18,7 @@ class SendMessageService extends AbstractSendMessageService
         $this->api_url = $this->config->server . "/default/en_US/send.html";
     }
 
-    /** @return mixed */
+    /** @return array */
     protected function data()
     {
         return [
@@ -31,7 +30,7 @@ class SendMessageService extends AbstractSendMessageService
         ];
     }
 
-    /** @return mixed */
+    /** @return string */
     protected function development()
     {
         return '{}';
